@@ -1,0 +1,203 @@
+@@font-face {
+    font-family: narnia;
+    src: url(../../Content/Fonts/Narnia.otf);
+    }
+
+    main{
+    width: 100%;
+    background-color: #fff;
+    }
+    nav{
+        font-family: poppins;
+        background-color: #000000;
+    }
+    .page1{
+        height: 95vh;
+        width: 100%;
+        position: relative;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .video video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+    .content {
+        position: relative;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        height: 100%;
+        width: 100%;
+        padding-left: 2vw;
+    }
+
+    .content h2 {
+        font-size: 7vw;
+        font-weight: 700;
+        line-height: 7.5vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #dbdbdb;
+        position: relative;
+        font-family: narnia;
+        letter-spacing: 0.2rem;
+    }
+    .content h2 span {
+        position: absolute;
+        top: 0;
+        left: 0.4%;
+        font-size: 6.9vw;
+        color: #c7c000;
+    }
+
+    .content p {
+        color: #fff;
+        text-align: center;
+        padding-left: 0.6rem;
+        font-size: 1.5vw;
+        font-weight: 300;
+    }
+    .content .reserve-btn{
+        color: #fff;
+        border: 2px solid #c7c000;
+        transition: all 0.4s ease;
+    }
+    .content .reserve-btn:hover {
+        color: #000000;
+        background-color: #c7c000;
+    }
+
+
+
+
+
+    .page2 {
+        height: 100vh;
+        width: 100%;
+        padding: 3rem;
+        font-family: "Open Sans", sans-serif;
+    }
+    .page2 h2{
+        font-size: 4vw;
+        font-family: narnia;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    }
+    .page2 .image {
+        height: 40%;
+        width: 40%;
+        overflow: hidden;
+    }
+    .page2 .image img {
+        height: 100%;
+        width: 100%;
+        transition: all 0.2s ease;
+        object-fit: cover;
+        object-position: center;
+    }
+    .page2 .image img:hover {
+        scale: 1.1;
+    }
+
+    .page2 p {
+        font-size: 1.6vw;
+        font-weight: 100;
+        text-align: justify;
+        line-height: 2.5vw;
+        width: 75%;
+    }
+    .page2 p span{
+    font-family: narnia;
+    letter-spacing: 0.15rem;
+    }
+
+
+
+    .page3 {
+        min-height: 100vh;
+        width: 100%;
+    }
+    .page3 h2{
+        font-family: narnia;
+        text-align: center;
+        font-size: 7vw;
+    }
+    .page3 img{
+        transition: all 0.3s ease;
+    }
+    .page3 img:hover{
+        scale: 1.1;
+    }
+
+    footer{
+        padding: 0 3rem;
+        font-family: poppins;
+    }
+    footer .socials{
+        margin-top: 1.5rem;
+    }
+
+    footer .content1{
+        width: 60%;
+    }
+
+@media all and (max-width: 600px){
+
+
+    .content h2 {
+        font-size: 15vw;
+        line-height: 15.5vw;
+    }
+    .content h2 span{
+            font-size: 14.9vw;
+        }
+
+    .content p {
+        font-size: 4vw;
+        
+    }
+
+    .page2 {
+        padding: 2rem;
+    }
+
+    .page2 > h2 {
+        font-size: 9vw;
+    }
+
+    .page2 > .image {
+        width: 100%;
+    }
+
+    .page2 > p {
+        font-size: 4vw;
+        text-align: initial;
+        line-height: 6vw;
+        width: 100%;
+    }
+
+    footer{
+        padding: 0 2rem;
+    }
+
+    footer .content1{
+        width: 100%;
+    }
+    footer .socials{
+        margin-top: 0;
+    }
+
+    footer .reach{
+        margin-top: 4rem;
+    }
+
+}
