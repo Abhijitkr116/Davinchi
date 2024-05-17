@@ -1,3 +1,7 @@
+@font-face {
+    font-family: narnia;
+    src: url(Fonts/Narnia.ttf);
+    }
 *{
     margin: 0;
     padding: 0;
