@@ -17,11 +17,17 @@
         position: relative;
         font-family: "Open Sans", sans-serif;
     }
-
     .video{
         position: absolute;
         height: 100%;
         width: 100%;
+    }
+    .video .hero-image{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: none;
     }
     .video video{
         position: absolute;
@@ -151,7 +157,13 @@
     }
 
 @media all and (max-width: 600px){
-
+    
+    .video .hero-image{
+        display: block;
+    }
+    .video video{
+        display: none;
+    }
 
     .content h2 {
         font-size: 15vw;

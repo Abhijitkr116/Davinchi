@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans;
+}
+.title h1{
+    font-size: 6vw;
+}
+.title img{
+    width: 60%;
+}
+nav{
+    font-family: poppins;
+    background-color: #000000;
+}
+.container{
+    margin-top: 7vh;
+}
+tbody{
+    background: none;
+}
+.page1{
+    border-bottom: 1px solid #222;
+}
+.content{
+    height: 50vh;
+    /* width: 100%; */
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.contents{
+    /* border: 2px solid #000; */
+    /* padding-bottom: 6rem; */
+}
+.heading{
+    position: sticky;
+    bottom: 20rem;
+    font-family: narnia;
+    font-size: 10vw;
+}
+
+h1{
+    font-family: narnia;
+}
+
+/* Table Styling */
+
+.items-name, .price{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    font-family: narnia;
+    text-decoration: underline;
+}
+.box p{
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+
+footer{
+    padding: 0 3rem;
+    font-family: poppins;
+}
+footer .socials{
+    margin-top: 1.5rem;
+}
+
+footer .content1{
+    width: 60%;
+}
+
+@media all and (max-width: 600px){
+    .title h1{
+        font-size: 8vw;
+    }
+    .title img{
+        width: 80%;
+    }
+    
+    .content{
+        height: 30vh;
+        border-top-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    .Item-name{
+        /* margin-left: 0.4rem; */
+    }
+    .items-name, .price{
+        font-size: 1.4rem;
+    }
+
+
+
+    /* Footer */
+
+    footer{
+        padding: 0 2rem;
+    }
+
+    footer .content1{
+        width: 100%;
+    }
+    footer .socials{
+        margin-top: 0;
+    }
+
+    footer .reach{
+        margin-top: 4rem;
+    }
+
+}
