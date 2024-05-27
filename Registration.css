@@ -31,7 +31,7 @@
     .circle{
         height: 55%;
         width: 90%;
-        background-color: #FFF7E5;
+        background-color: #fff4d9;
         border-radius: 50%;
         /* animation: beat 5s infinite; */
         animation: float 1s ease-in-out infinite, wave 4s ease-in-out infinite, opacityChange 3s ease-in-out infinite;
@@ -138,9 +138,11 @@ footer .content1{
 @keyframes wave {
     0%, 100% {
         transform: rotate(-10deg);
+        background-color: #f9f1dd;
     }
     50% {
         transform: rotate(10deg);
+        background-color: #ffecbb;
     }
 }
 
