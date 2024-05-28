@@ -109,6 +109,7 @@
         transition: all 0.2s ease;
         object-fit: cover;
         object-position: center;
+        animation: zoom 5s infinite ease-in-out;
     }
     .page2 .image img:hover {
         scale: 1.1;
@@ -124,6 +125,7 @@
     .page2 p span{
     font-family: narnia;
     letter-spacing: 0.15rem;
+    color: lightsalmon;
     }
 
 
@@ -135,7 +137,19 @@
     .page3 h2{
         font-family: narnia;
         text-align: center;
-        font-size: 7vw;
+        font-size: 7rem;
+        text-decoration: underline;
+    }
+    .page3 h3{
+        font-family: narnia;
+        font-size: 4rem;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .page3 h5{
+        text-transform: capitalize;
     }
     .page3 img{
         transition: all 0.3s ease;
@@ -143,8 +157,72 @@
     .page3 img:hover{
         scale: 1.1;
     }
+    .page3 .rounded-2 img{
+            height:100%;
+            width:100%;
+            object-fit:cover;
+    }
+
+    .page4{
+        min-height: 100vh;
+    }
+    .page4 .social-links{
+        color: lightsalmon;
+    }
+    .page4 .social-links a{
+        border: 1px solid #c0c0c0;
+        padding: 0.1rem 0.6rem;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+    }
+    .page4 .social-links a:hover{
+        background-color: rgb(227, 227, 227);
+    }
+    .page4 h3{
+        font-family: narnia;
+        font-size: 5rem;
+    }
+    .page4 .row p{
+        padding: 0 10vw;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .page4 .row p span{
+        font-weight: 500;
+        color: lightsalmon;
+        text-transform: capitalize;
+    }
+
+
+    .page4 .card img{
+        object-position: 100% 20%; 
+    }
+
+    .page5{
+        height: 100vh;
+    }
+    .page5 h3{
+        font-family: narnia;
+        font-size: 5rem;
+    }
+    .page5 .row p{
+        padding: 0 10vw;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .page5 .itemss img{
+        height: 80px !important;
+        width: 80px !important;
+        border-radius: 50%;
+    }
+    .page5 .row .itemss p{
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 0 2rem;
+    }
 
     footer{
+        margin-top: 10vh;
         padding: 0 3rem;
         font-family: poppins;
     }
@@ -197,8 +275,40 @@
         width: 100%;
     }
 
+    .page3 h2{
+        font-size: 4.5rem;
+    }
+    .page3 h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .page4 h3{
+        font-family: narnia;
+        font-size: 3rem;
+    }
+    .page4 .social-links a{
+        padding: 0.2rem 0.6rem;
+    }
+
+    .page4 .row p{
+        padding: 0 3vw;
+        font-size: 1.1rem;
+    }
+    .page5 h3{
+        font-family: narnia;
+        font-size: 3rem;
+    }
+    .page5 .row p{
+        padding: 0 3vw;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    
     footer{
         padding: 0 2rem;
+        margin-top: 10vh;
     }
 
     footer .content1{
@@ -212,4 +322,17 @@
         margin-top: 4rem;
     }
 
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Adjust the scale value to control the zoom level */
+    }
+    100% {
+        transform: scale(1);
+    }
 }
