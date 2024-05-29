@@ -1,0 +1,132 @@
+@font-face {
+    font-family: narnia;
+    src: url(Fonts/Narnia.ttf);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Open Sans;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    nav{
+        font-family: poppins;
+        background-color: #000000;
+    }
+main{
+    min-height: 94vh;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'narnia';
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.circle{
+    height: 85%;
+    width: 70%;
+    background-color: #fff4d9;
+    border-radius: 50%;
+    /* animation: beat 5s infinite; */
+    animation: float 1s ease-in-out infinite, wave 4s ease-in-out infinite, opacityChange 3s ease-in-out infinite;
+}
+.Login .first-row{
+    /* height: 75vh; */
+     border: 1px solid #000;
+    border-radius: 1rem;
+}
+.Login .first-row img{
+    height: 60%;
+    width: 100%;
+}
+.Login .second-row{
+    font-family: poppins;
+}
+
+
+
+    /* Footer */
+
+    footer{
+        padding: 0 3rem;
+        font-family: poppins;
+    }
+    footer .socials{
+        margin-top: 1.5rem;
+    }
+    
+    footer .content1{
+        width: 60%;
+    }
+
+
+
+
+
+@media all and (max-width: 600px){
+    
+    .Login .first-row{
+        border: none;
+    }
+
+
+      /* Footer */
+
+      footer{
+        padding: 0 2rem;
+    }
+
+    footer .content1{
+        width: 100%;
+    }
+    footer .socials{
+        margin-top: 0;
+    }
+
+    footer .reach{
+        margin-top: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(-40deg);
+        background-color: #f9f1dd;
+    }
+    50% {
+        transform: rotate(40deg);
+        background-color: #ffecbb;
+    }
+}
+
+@keyframes opacityChange {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
