@@ -1,0 +1,26 @@
+@font-face {
+    font-family: narnia;
+    src: url(Fonts/Narnia.ttf);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    main{
+    width: 100%;
+    background-color: #fff;
+    }
+    nav{
+        font-family: poppins;
+        background-color: #000000;
+    }
+
+    .Request-box{
+        height: 70vh;
+        margin-top: 10vh;
+    }
+    .date-filter {
+        margin-bottom: 20px;
+    }
