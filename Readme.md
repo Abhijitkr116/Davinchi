@@ -1,1 +1,28 @@
-https://chatgpt.com/share/aba92c0c-406d-4fd9-9585-3986c7a8edfa
+ $(document).ready(function () {
+            // Check for error message and show alert if exists
+            var error = @Html.Raw(ViewData["Error"]);
+            if (error) {
+                ErrorAlert();
+            }
+
+            // Check for success message and show alert if exists
+            var success = @Html.Raw(ViewData["Success"]);
+            if (success) {
+                SuccessAlert();
+            }
+        });
+
+        function ErrorAlert() {
+            swal.fire({
+                title: "Login Failed",
+                text: "Invalid Username or Password!",
+                icon: "error"
+            });
+        }
+
+        function SuccessAlert() {
+            swal.fire({
+                title: "Registration successful",
+                icon: "success"
+            });
+        }
